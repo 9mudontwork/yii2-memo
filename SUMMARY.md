@@ -17,6 +17,7 @@
     * [Checkbox](yii2-advance/view/activeform/checkbox.md)
   * [Custom File .js .css](yii2-advance/view/custom-file-.js-.css.md)
 * [Controller](yii2-advance/controller/README.md)
+  * [SQL Query](yii2-advance/controller/sql-query.md)
   * [Create](yii2-advance/controller/create.md)
   * [Update](yii2-advance/controller/update.md)
   * [Delete](yii2-advance/controller/delete.md)
