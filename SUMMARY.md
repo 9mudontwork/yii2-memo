@@ -23,6 +23,9 @@
 * [Array Helper](yii2-advance/array-helper/README.md)
   * [Array Map](yii2-advance/array-helper/array-map.md)
   * [Converting Objects to Arrays](yii2-advance/array-helper/converting-objects-to-arrays.md)
+* [MS Office](yii2-advance/ms-office/README.md)
+  * [Excel](yii2-advance/ms-office/excel.md)
+  * [Word](yii2-advance/ms-office/word.md)
 
 ## Bootstrap 4
 
