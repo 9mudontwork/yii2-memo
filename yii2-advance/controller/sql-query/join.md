@@ -1,13 +1,11 @@
 # ตัวอย่าง Join
 
 ```php
-use yii\db\Query;
-
-$meetingRoom = (new Query())
+$meetingRoom = MeetingRoom::find()
             ->select([
                 'meeting_room.id as meeting_room_id',
                 'meeting_room.name as meeting_room_name',
-                'meeting_room.image as meeting_room_image',
+                'meeting_room.layouts as meeting_room_layouts',
                 'meeting_room.capacity as meeting_room_capacity',
                 'meeting_room.room_status as meeting_room_room_status',
 
@@ -15,14 +13,14 @@ $meetingRoom = (new Query())
                 'booking.start_time as booking_start_time',
                 'booking.end_time as booking_end_time',
             ])
-            ->from('meeting_room')
             ->leftJoin('booking', 'booking.meeting_room_id = meeting_room.id')
             ->where([
                 'meeting_room.status' => 'active',
             ])
-            ->orderBy(['name' => 'SORT_ASC'])
-            ->distinct()
+            ->orderBy(['meeting_room.name' => 'SORT_ASC'])
+            // ->distinct()
             ->limit(5)
+            ->asArray()
             ->all();
 ```
 
