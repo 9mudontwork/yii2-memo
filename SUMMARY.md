@@ -19,19 +19,20 @@
 * [Controller](yii2-advance/controller/README.md)
   * [SQL Query](yii2-advance/controller/sql-query/README.md)
     * [ตัวอย่าง Join](yii2-advance/controller/sql-query/join.md)
+    * [Insert หลายๆ row พร้อมกัน](yii2-advance/controller/sql-query/insert-row.md)
   * [Create](yii2-advance/controller/create.md)
   * [Update](yii2-advance/controller/update.md)
   * [Delete](yii2-advance/controller/delete.md)
-* [Array Helper](yii2-advance/array-helper/README.md)
-  * [Array Map](yii2-advance/array-helper/array-map.md)
-  * [Converting Objects to Arrays](yii2-advance/array-helper/converting-objects-to-arrays.md)
-* [MS Office](yii2-advance/ms-office/README.md)
-  * [Excel](yii2-advance/ms-office/excel.md)
-  * [Word](yii2-advance/ms-office/word.md)
 
 ## ฟังก์ชั่นต่าง ๆ ของ Yii
 
+* [Array Helper](yii/array-helper/README.md)
+  * [Array Map](yii/array-helper/array-map.md)
+  * [Converting Objects to Arrays](yii/array-helper/converting-objects-to-arrays.md)
 * [redirect กลับไปหน้าที่ผ่านมา](yii/redirect.md)
+* [MS Office](yii/ms-office/README.md)
+  * [Excel](yii/ms-office/excel.md)
+  * [Word](yii/ms-office/word.md)
 
 ## Bootstrap 4
 
