@@ -29,6 +29,10 @@
   * [Excel](yii2-advance/ms-office/excel.md)
   * [Word](yii2-advance/ms-office/word.md)
 
+## ฟังก์ชั่นต่าง ๆ ของ Yii
+
+* [redirect กลับไปหน้าที่ผ่านมา](yii/redirect.md)
+
 ## Bootstrap 4
 
 * [การใช้ Flex](bootstrap-4/flex.md)
