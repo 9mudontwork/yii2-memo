@@ -25,3 +25,31 @@ backend\config\main.php
 ],
 ```
 
+## อีกแบบ
+
+```php
+$string = '([-\w]+|\d+)';
+$number = '\d+';
+
+'urlManager' => [
+            'class' => 'yii\web\UrlManager',
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            // 'suffix' => '/',
+            // 'normalizer' => [
+            //     // 'class' => 'yii\web\UrlNormalizer',
+            //     // 'action' => \yii\web\UrlNormalizer::ACTION_REDIRECT_TEMPORARY,
+            // ],
+            'rules' => [
+                "<controller:{$string}>" => "<controller>/index",
+                "<controller:{$string}>/<id:{$number}>" => "<controller>/view",
+                "<controller:{$string}>/<action:{$string}>/<id:{$string}>" => "<controller>/<action>",
+                "<controller:{$string}>/<action:{$string}>" => "<controller>/<action>",
+
+                // route file
+                "<controller:{$string}>/<action:{$string}>/<id:{$string}>/<width:{$string}>" => "<controller>/<action>",
+                "<controller:{$string}>/<action:{$string}>/<id:{$string}>/<width:{$string}>/<height:{$string}>" => "<controller>/<action>",
+            ],
+        ],
+```
+
