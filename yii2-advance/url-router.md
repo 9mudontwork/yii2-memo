@@ -41,12 +41,13 @@ $number = '\d+';
             //     // 'action' => \yii\web\UrlNormalizer::ACTION_REDIRECT_TEMPORARY,
             // ],
             'rules' => [
+                // normal route
                 "<controller:{$string}>" => "<controller>/index",
                 "<controller:{$string}>/<id:{$number}>" => "<controller>/view",
                 "<controller:{$string}>/<action:{$string}>/<id:{$string}>" => "<controller>/<action>",
                 "<controller:{$string}>/<action:{$string}>" => "<controller>/<action>",
 
-                // route file
+                // file route
                 "<controller:{$string}>/<action:{$string}>/<id:{$string}>/<width:{$string}>" => "<controller>/<action>",
                 "<controller:{$string}>/<action:{$string}>/<id:{$string}>/<width:{$string}>/<height:{$string}>" => "<controller>/<action>",
             ],
