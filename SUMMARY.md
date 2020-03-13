@@ -10,7 +10,7 @@
   * [Model Generator](yii2-advance/yii-generator/model-generator.md)
   * [CRUD Generator](yii2-advance/yii-generator/crud-generator.md)
 * [Model](yii2-advance/model/README.md)
-  * [Search Model](yii2-advance/model/search-model.md)
+  * [Custom Search & Gridview](yii2-advance/model/search-model.md)
 * [View](yii2-advance/view/README.md)
   * [ActiveForm](yii2-advance/view/activeform/README.md)
     * [dependent DropdownList](yii2-advance/view/activeform/dependent-dropdownlist.md)
