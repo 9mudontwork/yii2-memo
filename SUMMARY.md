@@ -45,5 +45,6 @@
 
 ## PHP Function
 
+* [เก็บข้อมูล Array ลง Database](php-function/array-database.md)
 * [จัดการ Array](php-function/array.md)
 
