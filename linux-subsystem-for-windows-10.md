@@ -10,6 +10,8 @@
 
 {% embed url="http://www.oopsbox.com/?p=220" %}
 
+{% embed url="https://armno.in.th/2015/03/24/oh-my-zsh-to-prezto/" %}
+
 
 
 ## เปิด feature
