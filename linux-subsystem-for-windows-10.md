@@ -8,6 +8,8 @@
 
 {% embed url="https://medium.com/grean-developers-family/%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%B5-%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%83%E0%B8%8A%E0%B9%89-z-shell-zsh-%E0%B8%84%E0%B8%A5%E0%B8%B9%E0%B9%86-%E0%B8%9A%E0%B8%99-windows-10-vscode-f5ba3a8dc493" %}
 
+{% embed url="http://www.oopsbox.com/?p=220" %}
+
 
 
 ## เปิด feature
