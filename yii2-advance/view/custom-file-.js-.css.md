@@ -75,7 +75,7 @@ backend\assets\AppAsset.php
 ถ้าต้องการ register ไฟล์ js ของเราให้อยู่ข้างล่าง asset ของ yii
 
 ```php
-$this->registerJsFile('@web/js/step4.js', ['depends' => 'frontend\assets\AppAsset']);
+$this->registerJsFile('@web/js/step4.js', ['depends' => 'frontend\assets\AppAsset', 'position' => View::POS_HEAD]);
 ```
 
 css
