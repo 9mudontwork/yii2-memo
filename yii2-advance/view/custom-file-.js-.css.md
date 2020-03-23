@@ -76,6 +76,8 @@ backend\assets\AppAsset.php
 
 ```php
 $this->registerJsFile('@web/js/step4.js', ['depends' => 'frontend\assets\AppAsset', 'position' => View::POS_HEAD]);
+
+\yii\web\JqueryAsset
 ```
 
 css
