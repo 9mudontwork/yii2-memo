@@ -11,6 +11,7 @@
   * [Model Generator](yii2-advance/yii-generator/model-generator.md)
   * [CRUD Generator](yii2-advance/yii-generator/crud-generator.md)
 * [Model](yii2-advance/model/README.md)
+  * [ตัวอย่าง Validate Rule ใน Model](yii2-advance/model/validate-rule-model.md)
   * [Custom Search & Gridview](yii2-advance/model/search-model.md)
 * [View](yii2-advance/view/README.md)
   * [ActiveForm](yii2-advance/view/activeform/README.md)
