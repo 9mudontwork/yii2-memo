@@ -12,6 +12,8 @@
 
 {% embed url="https://armno.in.th/2015/03/24/oh-my-zsh-to-prezto/" %}
 
+{% embed url="https://medium.com/@shivam1/make-your-terminal-beautiful-and-fast-with-zsh-shell-and-powerlevel10k-6484461c6efb" %}
+
 
 
 ## เปิด feature
