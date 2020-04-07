@@ -50,3 +50,7 @@
 * [เก็บข้อมูล Array ลง Database](php-function/array-database.md)
 * [จัดการ Array](php-function/array.md)
 
+## XAMPP
+
+* [ลง PHP เวอชันอื่นใน XAMPP](xampp/php-xampp.md)
+
