@@ -4,5 +4,7 @@
 
 {% embed url="https://github.com/samdark/yii2-cookbook" %}
 
+{% embed url="https://github.com/mickgeek/yii2-advanced-one-domain-config" %}
+
 
 
