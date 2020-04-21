@@ -38,6 +38,10 @@ sudo sed -i 's/\/archive/\/th.archive/g' /etc/apt/sources.list
 sudo apt-get update
 ```
 
+## ติดตั้ง homebrew
+
+{% embed url="https://brew.sh/" %}
+
 ## ติดตั้ง Zsh
 
 ```text
