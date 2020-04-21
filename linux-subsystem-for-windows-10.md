@@ -54,6 +54,7 @@ sudo apt-get install build-essential
 ```text
 chsh -s /bin/zsh
 
+which zsh
 whereis zsh
 ```
 
