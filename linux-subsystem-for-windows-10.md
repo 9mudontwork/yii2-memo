@@ -31,9 +31,9 @@
 
 
 ```text
-sed -i 's/\/us.archive/\/th.archive/g' /etc/apt/sources.list
+sudo sed -i 's/\/us.archive/\/th.archive/g' /etc/apt/sources.list
 หรือ /archive.ubuntu เป็น th.archive.ubuntu ดังนี้
-sed -i 's/\/archive/\/th.archive/g' /etc/apt/sources.list
+sudo sed -i 's/\/archive/\/th.archive/g' /etc/apt/sources.list
 
 sudo apt-get update
 ```
