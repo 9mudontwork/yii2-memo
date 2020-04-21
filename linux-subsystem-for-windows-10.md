@@ -36,6 +36,9 @@ sudo sed -i 's/\/us.archive/\/th.archive/g' /etc/apt/sources.list
 sudo sed -i 's/\/archive/\/th.archive/g' /etc/apt/sources.list
 
 sudo apt-get update
+
+sudo apt-get install build-essential
+ตัว compile โปรแกรมที่จะใช่ใน linux
 ```
 
 ## ติดตั้ง homebrew
