@@ -49,10 +49,6 @@ sudo apt-get update
 ## ติดตั้ง Zsh
 
 ```text
-sudo apt-get install zsh
-
-zsh --version
-
 chsh -s /bin/zsh
 
 whereis zsh
