@@ -42,6 +42,10 @@ sudo apt-get update
 
 {% embed url="https://brew.sh/" %}
 
+{% embed url="https://docs.brew.sh/Homebrew-on-Linux" %}
+
+
+
 ## ติดตั้ง Zsh
 
 ```text
