@@ -54,3 +54,7 @@
 
 * [ลง PHP เวอชันอื่นใน XAMPP](xampp/php-xampp.md)
 
+## Javascript
+
+* [ลบ item ใน array](javascript/item-array.md)
+
