@@ -56,6 +56,8 @@ chsh -s /bin/zsh
 
 which zsh
 whereis zsh
+
+chsh $USER -s $(which zsh);
 ```
 
 
