@@ -1,7 +1,8 @@
 # Table of contents
 
 * [บันทึกการใช้งาน Yii2](README.md)
-* [ติดตั้ง Linux Subsystem For Windows 10](linux-subsystem-for-windows-10.md)
+* [ติดตั้ง Linux Subsystem For Windows 10](linux-subsystem-for-windows-10/README.md)
+  * [Command Ubuntu](linux-subsystem-for-windows-10/command-ubuntu.md)
 
 ## yii2-advance
 
