@@ -30,6 +30,21 @@ backend\config\main.php
         'class' => 'mdm\admin\Module',
     ]
 ],
+
+'components' => [
+    'authManager' => [
+        'class' => 'yii\rbac\PhpManager', // or use 'yii\rbac\DbManager'
+    ]
+],
+
+'as access' => [
+    'class' => 'mdm\admin\components\AccessControl',
+    'allowActions' => [
+        'site/*',
+        'admin/*',
+        'some-controller/some-action',
+    ]
+],
 ```
 
 
