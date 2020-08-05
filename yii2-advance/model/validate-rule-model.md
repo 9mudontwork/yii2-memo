@@ -15,5 +15,7 @@
 ],
 ```
 
+## Validate ใน javascript
 
+{% embed url="https://yii2-cookbook-test.readthedocs.io/forms-activeform-js/" %}
 
