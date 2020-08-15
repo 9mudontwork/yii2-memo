@@ -5,7 +5,6 @@
 ## yii2-advance
 
 * [การติดตั้ง และ run server](yii2-advance/run-server.md)
-* [ติดตั้ง RBAC Manager](yii2-advance/rbac-manager.md)
 * [SQL Server](yii2-advance/sql-server.md)
 * [ตั้งค่า Url Router](yii2-advance/url-router.md)
 * [Yii Generator](yii2-advance/yii-generator/README.md)
