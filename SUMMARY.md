@@ -1,9 +1,6 @@
 # Table of contents
 
 * [บันทึกการใช้งาน Yii2](README.md)
-* [ติดตั้ง Linux Subsystem For Windows 10](linux-subsystem-for-windows-10/README.md)
-  * [Command Ubuntu](linux-subsystem-for-windows-10/command-ubuntu.md)
-* [Git](git.md)
 
 ## yii2-advance
 
@@ -45,18 +42,16 @@
 
 * [การใช้ Flex](bootstrap-4/flex.md)
 
-## CSS Trick
+---
 
-* [Untitled](css-trick/untitled.md)
+* [ติดตั้ง Linux Subsystem For Windows 10](linux-subsystem-for-windows-10/README.md)
+  * [Command Ubuntu](linux-subsystem-for-windows-10/command-ubuntu.md)
+* [Git](git.md)
 
 ## PHP Function
 
 * [เก็บข้อมูล Array ลง Database](php-function/array-database.md)
 * [จัดการ Array](php-function/array.md)
-
-## XAMPP
-
-* [ลง PHP เวอชันอื่นใน XAMPP](xampp/php-xampp.md)
 
 ## Javascript
 
