@@ -19,6 +19,7 @@ php init
 
 ```text
 php yii serve --docroot="frontend\web" --port=8080
+
 php yii serve --docroot="backend\web" --port=8081
 ```
 
