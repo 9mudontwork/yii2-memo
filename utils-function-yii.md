@@ -8,6 +8,7 @@ namespace common\components;
 use Yii;
 use DateTime;
 use yii\helpers\Url;
+use yii\web\Response;
 
 class Utils
 {
@@ -30,7 +31,7 @@ class Utils
         return $date->format('d-m-Y');
     }
 
-    public static function isset($value)
+    public static function issetNotEmpty($value)
     {
         if (isset($value) && !empty($value)) {
             return true;
@@ -93,7 +94,7 @@ class Utils
 
     public static function setupModel($model, array $data)
     {
-        if (self::isset($data)) {
+        if (self::issetNotEmpty($data)) {
             foreach ($data as $key => $value) {
                 $model->$key = $value;
             }
@@ -134,6 +135,21 @@ class Utils
     public static function currentLanguage()
     {
         return Yii::$app->language;
+    }
+
+    public static function post()
+    {
+        return Yii::$app->request->post();
+    }
+
+    public static function get()
+    {
+        return Yii::$app->request->get();
+    }
+
+    public static function setResponseAsJson()
+    {
+        Yii::$app->response->format = Response::FORMAT_JSON;
     }
     /** =============== End Utils Function =============== */
 }
