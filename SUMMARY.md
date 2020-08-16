@@ -28,6 +28,7 @@
 
 ---
 
+* [Utils Function สำหรับ Yii](utils-function-yii.md)
 * [ต่อ SQL Server กับ Yii](sql-server.md)
 
 ## ฟังก์ชั่นต่าง ๆ ของ Yii
