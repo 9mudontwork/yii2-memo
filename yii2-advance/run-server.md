@@ -1,10 +1,4 @@
-# การติดตั้ง และ run server
-
-## Document
-
-{% embed url="https://www.yiiframework.com/extension/yiisoft/yii2-app-advanced/doc/guide/2.0/en/start-installation" %}
-
-## ติดตั้ง
+# Run Local Server
 
 ```text
 composer global require fxp/composer-asset-plugin
@@ -15,7 +9,7 @@ composer dumpautoload
 php init
 ```
 
-## run server
+## run yii server
 
 ```text
 php yii serve --docroot="frontend\web" --port=8080
@@ -23,9 +17,24 @@ php yii serve --docroot="frontend\web" --port=8080
 php yii serve --docroot="backend\web" --port=8081
 ```
 
-## ตั้งค่าการเชื่อมต่อฐานข้อมูล
+## Run Sass
 
 ```text
-common\config\main-local.php
+ถ้ายังไม่มี sass ติดตั้ง sass ก่อน
+npm install -g sass 
+
+run command
+(compile css file)
+sass --watch frontend/web/sass/style.scss:frontend/web/css/style.css
+
+(compile min.css file)
+sass --watch --style=compressed frontend/web/sass/style.scss:frontend/web/css/style.css
+
+
+** ไม่ push ไฟล์ 
+.css 
+.css.map
 ```
+
+
 
