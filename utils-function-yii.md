@@ -16,6 +16,7 @@ use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\web\Response;
 use yii\helpers\ArrayHelper;
+use yii\web\NotFoundHttpException;
 
 class _
 {
@@ -48,6 +49,15 @@ class _
         return false;
     }
 
+    public static function isNotSetEmpty($value)
+    {
+        if (!isset($value) && empty($value)) {
+            return true;
+        }
+
+        return false;
+    }
+
     public static function isNull($value)
     {
         if (is_null($value)) {
@@ -56,6 +66,17 @@ class _
 
         return false;
     }
+
+    public static function isNullEmpty($value)
+    {
+        if (is_null($value) && empty($value)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    // public static function 
 
 
 
@@ -91,7 +112,7 @@ class _
         return is_object($result) ? $result : null;
     }
 
-    public static function isArray(array $array)
+    public static function isArray($array)
     {
         if (is_array($array)) {
             return true;
@@ -160,7 +181,7 @@ class _
         return null;
     }
 
-    public static function isObject(array $array)
+    public static function isObject($array)
     {
         if (is_object($array)) {
             return true;
@@ -185,8 +206,28 @@ class _
 
 
 
+    /** =============== จัดการกับ JSON =============== */
+
+    public static function isJson($string)
+    {
+        json_decode($string);
+        return (json_last_error() == JSON_ERROR_NONE);
+    }
+
+
+
+
+
+
+
+
 
     /** =============== จัดการกับเวลา =============== */
+
+    public static function setThailandTimeZone()
+    {
+        date_default_timezone_set("Asia/Bangkok");
+    }
 
     public static function getDateTimeYmdHis()
     {
@@ -280,9 +321,36 @@ class _
         }
     }
 
+    public static function throwNotFoundIfNotFoundModel($model)
+    {
+        if (_::issetNotEmpty($model)) {
+            return $model;
+        } else {
+            throw new NotFoundHttpException();
+        }
+    }
+
     public static function throwErrorModel(array $error)
     {
         throw new \Exception(json_encode($error), _::STATUS_CODE_MODEL_ERROR);
+    }
+
+    private static function renderHtmlList($textList)
+    {
+        $ulClass = 'list-group ml-3';
+        $liClass = '';
+
+        $htmlErrorList = '<ul class="' . $ulClass . '">';
+        foreach ($textList as $text) {
+            if (_::isArray($text)) {
+                $htmlErrorList .= _::renderHtmlList($text);
+            } else {
+                $htmlErrorList .= '<li class="' . $liClass . '">' . $text . '</li>';
+            }
+        }
+        $htmlErrorList .= "</ul>";
+
+        return $htmlErrorList;
     }
 
     public static function getErrorListMessageModel($errors)
@@ -293,16 +361,7 @@ class _
 
             if (_::issetNotEmpty($errors)) {
 
-                $ulClass = 'list-group ml-3';
-                $liClass = '';
-
-                $htmlErrorList = '<ul class="' . $ulClass . '">';
-                foreach ($errors as $error) {
-                    $htmlErrorList .= '<li class="' . $liClass . '">' . $error . '</li>';
-                }
-                $htmlErrorList .= "</ul>";
-
-                return $htmlErrorList;
+                return _::renderHtmlList($errors);
             }
         }
 
@@ -346,13 +405,21 @@ class _
         return Yii::$app->language;
     }
 
-    public static function post()
+    public static function post($key = null)
     {
+        if (_::issetNotEmpty($key)) {
+            return Yii::$app->request->post($key);
+        }
+
         return Yii::$app->request->post();
     }
 
-    public static function get()
+    public static function get($key = null)
     {
+        if (_::issetNotEmpty($key)) {
+            return Yii::$app->request->get($key);
+        }
+
         return Yii::$app->request->get();
     }
 
@@ -374,6 +441,11 @@ class _
     public static function hasFlash($key)
     {
         return Yii::$app->session->hasFlash($key);
+    }
+
+    public static function beginTransaction()
+    {
+        return Yii::$app->db->beginTransaction();
     }
 }
 
