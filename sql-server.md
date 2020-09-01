@@ -17,3 +17,7 @@ extension=php_pdo_sqlsrv_73_ts_x64.dll
 'dsn' => 'sqlsrv:Server=localhost;Database=CUARDB',
 ```
 
+ตั้งค่า login
+
+![](.gitbook/assets/image%20%284%29.png)
+
