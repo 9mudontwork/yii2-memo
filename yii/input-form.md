@@ -17,11 +17,12 @@ $form = ActiveForm::begin([
 ## Dropdown List
 
 ```php
-echo $form->field($model->building, 'id')->dropDownList(ArrayHelper::map($data->buildingList, 'id', 'name'), [
-    'options' => [
-        'id' => 'area_building_id',
-        'placeholder' => 'เลือกอาคาร'
-    ],
-])->label(false);
+echo $form->field($model->building, 'id', [
+                        'inputOptions' => [
+                            'id' => 'area_building_id',
+                        ],
+                    ])->dropDownList(ArrayHelper::map($data->buildingList, 'id', 'name'), [
+                        'prompt' => 'เลือกอาคาร...'
+                    ])->label(false);
 ```
 
