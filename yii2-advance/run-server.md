@@ -24,12 +24,21 @@ php yii serve --docroot="backend\web" --port=8081
 npm install -g sass 
 
 run command
+
+##### fontend #####
 (compile css file)
-sass --watch frontend/web/sass/style.scss:frontend/web/css/style.css
+sass --watch frontend/web/sass/custom-style.scss:frontend/web/css/custom-style.css
 
 (compile min.css file)
-sass --watch --style=compressed frontend/web/sass/style.scss:frontend/web/css/style.css
+sass --watch --style=compressed frontend/web/sass/custom-style.scss:frontend/web/css/custom-style.css
 
+
+##### backend #####
+(compile css file)
+sass --watch backend/web/sass/custom-style.scss:backend/web/css/custom-style.css
+
+(compile min.css file)
+sass --watch --style=compressed backend/web/sass/custom-style.scss:backend/web/css/custom-style.css
 
 ** ไม่ push ไฟล์ 
 .css 
