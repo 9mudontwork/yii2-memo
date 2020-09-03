@@ -33,6 +33,7 @@
 
 ## ฟังก์ชั่นต่าง ๆ ของ Yii
 
+* [Input Form](yii/input-form.md)
 * [Array Helper](yii/array-helper/README.md)
   * [Array Map](yii/array-helper/array-map.md)
   * [Converting Objects to Arrays](yii/array-helper/converting-objects-to-arrays.md)
