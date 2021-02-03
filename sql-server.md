@@ -29,5 +29,19 @@ extension=php_pdo_sqlsrv_73_ts_x64.dll
 
 ## ทำให้เครื่องอื่น connect sql server ได้
 
-[https://naiwaen.debuggingsoft.com/2018/03/how-to-enable-remote-connections-in-microsoft-sql-server/](https://naiwaen.debuggingsoft.com/2018/03/how-to-enable-remote-connections-in-microsoft-sql-server/)
+{% embed url="https://naiwaen.debuggingsoft.com/2018/03/how-to-enable-remote-connections-in-microsoft-sql-server/" %}
+
+## ถ้าหาก sql config ไม่เจอ
+
+`SQLServerManager15.msc` สำหรับ \[SQL Server 2019\] หรือ
+
+`SQLServerManager14.msc` สำหรับ \[SQL Server 2017\] หรือ
+
+`SQLServerManager13.msc` สำหรับ \[SQL Server 2016\] หรือ
+
+`SQLServerManager12.msc` สำหรับ \[SQL Server 2014\] หรือ
+
+`SQLServerManager11.msc` สำหรับ \[SQL Server 2012\] หรือ
+
+`SQLServerManager10.msc`สำหรับ \[SQL Server 2008\]
 
