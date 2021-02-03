@@ -14,7 +14,9 @@ extension=php_pdo_sqlsrv_73_ts_x64.dll
 ## วิธี config connection
 
 ```php
-'dsn' => 'sqlsrv:Server=localhost;Database=CUARDB',
+'dsn' => 'sqlsrv:Server=localhost;Database=INNOC_DB',
+'username' => 'admin',
+'password' => '',
 ```
 
 ## ตั้งค่า login
