@@ -29,6 +29,7 @@
   * [Create](yii2-advance/controller/create.md)
   * [Update](yii2-advance/controller/update.md)
   * [Delete](yii2-advance/controller/delete.md)
+* [สร้าง Class ใช้งานเอง](yii2-advance/class.md)
 
 ---
 
